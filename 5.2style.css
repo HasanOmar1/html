@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+
 div{
     background-color: blanchedalmond;
     width: 200px;
