@@ -1,0 +1,69 @@
+body{
+    background-color: cadetblue;
+    font-family: 'Abril Fatface';
+    
+}
+img{
+    width: 300px;
+}
+
+.about-me{
+    margin-left: 15px;
+}
+
+#name{
+    color: black;
+
+}
+#profession{
+    color: blue;
+}
+
+#p1{
+    font-size: 25px;
+    color: white;
+}
+#p2{
+    font-size: 30px;
+}
+
+.links{
+    font-size:30px;
+}
+
+button{
+    font-size: 30px;
+    margin-left: 250px;
+}
+
+.a2{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+a{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.cards{
+    padding:50px 50px;
+    
+}
+#div , #div2 , #div3 , #div4{
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+}
+#card{
+    width: 200px;
+    
+}
+#p3{
+    font-size: 14px;
+}
+
+p{
+    margin-left: 10px;
+}
