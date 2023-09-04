@@ -2,6 +2,7 @@ div{
     background-color: blanchedalmond;
     width: 200px;
     height: 300px;
+    box-shadow: 3px 5px 50px 6px grey;
 }
 #card{
     width: 200px;
