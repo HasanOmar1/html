@@ -47,6 +47,7 @@ a{
 }
 .cards{
     padding:50px 50px;
+    display:flex;
     
 }
 #div , #div2 , #div3 , #div4{
