@@ -49,12 +49,14 @@ a{
     padding:50px 50px;
     display:flex;
     
+    
 }
 #div , #div2 , #div3 , #div4{
     background-color: blanchedalmond;
     width: 200px;
     height: 300px;
- 
+    box-shadow: 3px 5px 50px 6px grey;
+
     margin: 10px;
 }
 #card{
