@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    text-align: center;
 }
 
 
@@ -9,12 +10,34 @@ body{
     font-family: 'Abril Fatface';
     
 }
+
+.container{
+    border: 1px solid black;
+    
+    
+}
+#lion-pic{
+    margin-top: 50px;
+    float: left;
+    display: inline;
+    margin-bottom: 20px;
+    height: 350px;
+}
+
 img{
     width: 300px;
+    
+    
+    
 }
 
 .about-me{
     margin-left: 15px;
+    display: inline-block;
+    
+}
+.about{
+    margin-top: 100px;
 }
 
 #name{
@@ -28,18 +51,31 @@ img{
 #p1{
     font-size: 25px;
     color: white;
+    margin-left: 50px;
+    
 }
 #p2{
     font-size: 30px;
+    margin-left: 30px
 }
 
 .links{
     font-size:30px;
+    margin-right: 20px;
 }
 
 button{
     font-size: 30px;
-    margin-left: 250px;
+    margin-left: 80px;
+    background-color: darkgreen;
+    border-radius: 15px;
+    color: white;
+    width: 30%;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: darkcyan;
 }
 
 .a2{
@@ -52,8 +88,11 @@ a{
     margin-left: 10px;
 }
 .cards{
-    padding:50px 50px;
+    padding-left: 550px;
     display:flex;
+    
+   
+
     
     
 }
@@ -62,13 +101,16 @@ a{
     width: 200px;
     height: 300px;
     box-shadow: 3px 5px 50px 6px grey;
-
     margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-#card{
+#card , #card2 , #card3 , #card4{
     width: 200px;
     
+    
 }
+
 #p3{
     font-size: 14px;
 }
@@ -76,3 +118,8 @@ a{
 p{
     margin-left: 10px;
 }
+
+li{
+    list-style: none;
+}
+
