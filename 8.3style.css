@@ -9,12 +9,13 @@ body{
 
 .container > div {
     background-color: white;
+    position: absolute;
+    
 }
 
 #div1{
 
     border: 5px solid blue;
-    position: absolute;
     top: 50px;
     height: 100px;
     width: 200px;
@@ -22,7 +23,6 @@ body{
 #div2{
 
     border: 5px solid red;
-    position: absolute;
     left: 100px;
     height: 300px;
     width: 200px;
@@ -31,7 +31,6 @@ body{
 #div3{
 
     border: 5px solid orange;
-    position: absolute;
     top: 300px;
     height: 200px;
     width: 500px;
@@ -39,7 +38,6 @@ body{
 #div4{
 
     border: 5px solid yellow;
-    position: absolute;
     top: 50px;
     height: 600px;
     width: 200px;
