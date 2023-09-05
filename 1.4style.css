@@ -1,6 +1,6 @@
 *{
-    box-sizing: border-box;
-    text-align: center;
+  box-sizing: border-box;
+ 
 }
 
 
@@ -12,8 +12,9 @@ body{
 }
 
 .container{
-    border: 1px solid black;
-    
+
+  
+    text-align: center;
     
 }
 #lion-pic{
@@ -33,6 +34,8 @@ img{
 
 .about-me{
     margin-left: 15px;
+    margin-top: 50px;
+    margin-bottom:10px;
     display: inline-block;
     
 }
@@ -64,8 +67,8 @@ img{
     margin-right: 20px;
 }
 
-button{
-    font-size: 30px;
+#clickme{
+    font-size: 25px;
     margin-left: 80px;
     background-color: darkgreen;
     border-radius: 15px;
@@ -73,8 +76,10 @@ button{
     width: 30%;
     padding: 10px 10px;
     cursor: pointer;
+    margin-top:10px;
 }
-button:hover{
+#clickme:hover{
+
     background-color: darkcyan;
 }
 
@@ -121,5 +126,48 @@ p{
 
 li{
     list-style: none;
+}
+
+.navbar{
+    
+    
+    display: flex;
+    align-items: left ;
+    position: sticky;
+    
+
+    
+
+}
+
+.navbar a {
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    float:left;
+    padding: 10px ;
+    overflow: auto;
+    
+
+    
+
+
+}
+
+.navbar a:hover{
+   color: white;
+   
+}
+
+header{
+    
+    display: flex;
+    align-items: left ;
+    position: sticky;
+    top: 0;
+   
+    
+    
 }
 
