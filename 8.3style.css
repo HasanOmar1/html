@@ -3,6 +3,14 @@ body{
 
 }
 
+.container{
+    position: relative;
+}
+
+.container > div {
+    background-color: white;
+}
+
 #div1{
 
     border: 5px solid blue;
