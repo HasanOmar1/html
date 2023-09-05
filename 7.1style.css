@@ -1,0 +1,108 @@
+*{
+    text-align: center;
+    background-color: darkslategrey;
+    color: white;
+}
+
+
+
+ #second , #fourth , #sixth , #last {
+    
+    margin-left: 70px;
+    padding: 15px;
+}
+
+#first , #third , #fivth , #seventh {
+    padding: 15px;
+}
+
+#first{
+    background-color: darkcyan;
+    border: none;
+
+    
+}
+
+#first:hover{
+    background-color: darkblue;
+    cursor: pointer;
+    
+
+}
+
+#second{
+    background-color: orange;
+    border: none;
+    padding: 6px;
+
+}
+#second:hover{
+    background-color: darkorange;
+    cursor: pointer;
+
+}
+
+
+
+#third{
+    background-color: green;
+    border: none;
+    border-radius: 30px;
+}
+#third:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+
+}
+
+#fourth{
+    background-color: red;
+    border: none;
+    border-radius: 30px;
+    padding: 6px;
+
+
+}
+#fourth:hover{
+    background-color: darkred;
+    cursor: pointer;
+
+}
+
+#fivth{
+    border-color: red;
+}
+
+#fivth:hover{
+    background-color: salmon ;
+    cursor: pointer;
+}
+
+#sixth{
+    border-color: red;
+    padding: 6px;
+}
+
+#sixth:hover{
+    background-color: pink
+}
+
+#seventh{
+    border-color: yellow;
+    border-radius: 30px;
+}
+#seventh:hover{
+    background-color:orange ;
+    cursor: pointer;
+}
+
+#last{
+    border-color: green;
+    border-radius: 30px;
+    padding: 6px;
+}
+#last:hover{
+    background-color:darkgreen ;
+    cursor: pointer;
+}
+    
