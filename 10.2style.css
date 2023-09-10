@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 1em sans-serif;
+    color: white;
+}
+
+body{
+    background: url(./assets/background.png) no-repeat center center/cover;
+    height: 100vh;
+}
+
+.navbar{
+    
+    display: flex;
+    gap: 20px;
+    padding: 20px 50px;
+    
+    
+
+}
+
+
+#logo{
+    margin-right: auto;
+    text-decoration: none;
+    font-weight: bold;
+    
+   
+    
+}
+
+#logo , #home , #about , #services, #contact , #faq{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+
+}
+#home:hover , #about:hover , #services:hover , #contact:hover , #faq:hover{
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    padding: 0 10px;
+    transition: 0.2s;
+}
+
+.info{
+    
+    text-align: center;
+    padding-top: 300px;
+    
+}
+
+.info h1{
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+
+.info p{
+    font-size: 20px;
+    padding-bottom: 50px;
+    
+}
+
+.info a{
+    font-size: 25px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 50px;
+}
+
+.info a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+
