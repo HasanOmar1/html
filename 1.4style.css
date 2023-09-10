@@ -2,12 +2,17 @@
   box-sizing: border-box;
  
 }
+html {
+    font-size: calc(0.1rem + 1.5vw);
+  }
 
 
 
 body{
     background-color: cadetblue;
     font-family: 'Abril Fatface';
+    font-size: 25px;
+    
     
 }
 
@@ -33,10 +38,11 @@ img{
 }
 
 .about-me{
-    margin-left: 15px;
+    margin-left: 25px;
     margin-top: 50px;
     margin-bottom:10px;
     display: inline-block;
+    font-family: sans-serif , Arial, Helvetica, sans-serif;
     
 }
 .about{
@@ -52,23 +58,24 @@ img{
 }
 
 #p1{
-    font-size: 25px;
+    
     color: white;
-    margin-left: 50px;
+    margin-left: 80px;
+   
     
 }
 #p2{
-    font-size: 30px;
+    
     margin-left: 30px
 }
 
 .links{
-    font-size:30px;
+    
     margin-right: 20px;
 }
 
 #clickme{
-    font-size: 25px;
+    
     margin-left: 80px;
     background-color: darkgreen;
     border-radius: 15px;
@@ -84,18 +91,19 @@ img{
 }
 
 .a2{
-    font-size: 30px;
+    
     margin-left: 10px;
 }
 
 a{
-    font-size: 15px;
+    
     margin-left: 10px;
+    font-size: 20px;
 }
 .cards{
-    padding-left: 550px;
-    display:flex;
     
+    display:flex;
+    justify-content: center;
    
 
     
@@ -109,6 +117,8 @@ a{
     margin: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 20px;
+    font-family: sans-serif , Arial, Helvetica, sans-serif;
 }
 #card , #card2 , #card3 , #card4{
     width: 200px;
@@ -117,7 +127,7 @@ a{
 }
 
 #p3{
-    font-size: 14px;
+    
 }
 
 p{
@@ -148,6 +158,7 @@ li{
     float:left;
     padding: 10px ;
     overflow: auto;
+    font-size: 20px;
     
 
     
@@ -171,3 +182,36 @@ header{
     
 }
 
+@media (max-width:500px){
+
+   .about{
+    padding-right: 50px;
+   }
+
+
+
+    .cards{
+
+        display: flex; 
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:768px){
+
+    .about{
+     padding-right: 100px;
+    }
+ 
+ 
+ 
+     .cards{
+ 
+         display: flex; 
+         align-items: flex-start;
+         justify-content: flex-start;
+         flex-wrap: wrap;
+     }
+ }
