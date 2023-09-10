@@ -68,28 +68,28 @@ footer{
 
    }
 
-aside{
+    aside{
     text-align: left;
     width: 40%;
     margin-left: 0;
-    height: 70% ;
+    height: 85% ;
     padding-left: 15px;
     padding-top: 15px;
     margin-right: 10px;
 
 }
 
-main{
+    main{
   
     text-align: right;
     width: 45%;
     margin-right: 0;
-    height: 70% ;
+    height: 85% ;
     
 
 }
 
-footer{
+    footer{
    
     
     padding: 15px;
