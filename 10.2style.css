@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: 1em sans-serif;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
     color: white;
+}
+main{
+    height: 100vh;
 }
 
 body{
@@ -14,11 +18,28 @@ body{
 .navbar{
     
     display: flex;
-    gap: 20px;
+    z-index: 999;
     padding: 35px 70px;
+    background-color: darkgrey;
+    position: fixed;
+    width: 100%;
+    
+    
     
     
 
+}
+
+.navs{
+    display: flex;
+    gap: 50px;
+    position: fixed;
+    right: 0;
+    padding-right: 50px;
+    
+    
+    
+    
 }
 
 
@@ -26,18 +47,22 @@ body{
     margin-right: auto;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.4rem;
+    color: black;
     
    
     
 }
 
-#logo , #home , #about , #services, #contact , #faq{
+ #home , #about , #services, #contact {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.4rem;
+    border-bottom: 2px solid darkcyan;
+    
 
 }
-#home:hover , #about:hover , #services:hover , #contact:hover , #faq:hover{
+#home:hover , #about:hover , #services:hover , #contact:hover{
     border: 1px solid white;
     background-color: white;
     color: black;
@@ -45,24 +70,74 @@ body{
     transition: 0.2s;
 }
 
-.info{
+/* main */
+
+
+
+
+.info-side{
     
-    text-align: center;
-    padding-top: 300px;
+    height: 70vh;
+
+}
+
+.left-side{
+    
+    display: flex;
+    float: left;
+    margin-top: 15vh;
+    
+    
+
+}
+#info-p {
+    
+    font-size: 35px;
+    line-height: 1.5;
     
 }
+
+img{
+    float: right;
+    width: 500px;
+    margin-right: 300px;
+    margin-top: 100px;
+    height: 400px;
+    
+}
+
+
+
+
+
+
 
 .info h1{
-    padding-bottom: 90px;
+    
+    
     font-size: 60px;
+    text-align: center;
+    padding-top: 130px;
+    
     
 }
 
-.info p{
+.info-side p{
     font-size: 20px;
-    padding-bottom: 70px;
+    width: 900px;
+    margin-left: 25%;
+    
     
 }
+
+#home-btn{
+    text-align: center;
+    display: flex;
+    width: 35vh;
+    margin-left: 80vh;
+   
+}
+
 
 .info a{
     font-size: 30px;
@@ -76,6 +151,216 @@ body{
     background-color: white;
     color: black;
     transition: 0.5s;
+}
+
+/* First section */
+
+.first-section{
+    height: 100vh;
+    background: url(./assets/section2background.png) no-repeat center center/cover;
+
+}
+
+.title h1{
+    
+    padding-top: 6vh;
+    font-size: 60px;
+    border-bottom: 1px solid darkcyan;
+    display: inline-block;
+    margin-left: 45%;
+}
+
+/* Bronze */
+
+.services-container-1{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    
+
+}
+
+
+.services-container-1 h1{
+
+    padding-left: 80px;
+    padding-bottom: 17px;
+    font-size: 50px;
+
+
+}
+.services-container-1 h3{
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 40px 50px;
+    border-bottom: 4px solid black;
+    text-align: center;
+    
+    
+}
+
+.services-container-1 a{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid none;
+    background-color: darkcyan;
+    border-radius: 40px;
+    width: 300px;
+    
+    
+}
+
+.services-container-1 a:hover{
+    background-color: darkgoldenrod;
+    transition: 0.2s;
+}
+
+
+#price{
+    background-color: grey;
+    
+}
+
+/* Silver */
+
+
+
+
+.services-container-2{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+   
+    
+    
+    
+
+}
+
+
+
+.services-container-2 h1{
+
+    padding-left: 80px;
+    padding-bottom: 17px;
+    font-size: 50px;
+
+
+}
+.services-container-2 h3{
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 40px 50px;
+    border-bottom: 4px solid black;
+    text-align: center;
+    
+    
+}
+
+.services-container-2 a{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid none;
+    background-color: darkcyan;
+    border-radius: 40px;
+    width: 300px;
+    
+    
+}
+
+.services-container-2 a:hover{
+    background-color: darkgoldenrod;
+    transition: 0.2s;
+}
+
+
+#price{
+    background-color: grey;
+    
+}
+
+
+
+
+/* Gold */
+
+
+
+
+.services-container-3{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+   
+
+}
+
+
+
+.services-container-3 h1{
+
+    padding-left: 80px;
+    padding-bottom: 17px;
+    font-size: 50px;
+
+
+}
+.services-container-3 h3{
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 40px 50px;
+    border-bottom: 4px solid black;
+    text-align: center;
+    
+    
+}
+
+.services-container-3 a{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid none;
+    background-color: darkcyan;
+    border-radius: 40px;
+    width: 300px;
+    
+    
+}
+
+.services-container-3 a:hover{
+    background-color: darkgoldenrod;
+    transition: 0.2s;
+}
+
+
+#price{
+    background-color: grey;
+    
+}
+
+
+.service-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+
+/* Second Section */
+
+ .second-section{
+    height: 100vh;
 }
 
 
