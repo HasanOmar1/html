@@ -55,7 +55,7 @@ body{
     
 }
 
- #home , #about , #services, #contact {
+ #home  , #services, #contact {
     text-decoration: none;
     color: black;
     font-size: 1.4rem;
@@ -63,7 +63,7 @@ body{
     
 
 }
-#home:hover , #about:hover , #services:hover , #contact:hover{
+#home:hover  , #services:hover , #contact:hover{
     border: 1px solid white;
     background-color: white;
     color: black;
@@ -374,7 +374,61 @@ img{
 /* Second Section */
 
  .second-section{
-    height: 100vh;
+    height: 50vh;
+    background-color: #344a72;  
+    line-height: 1.8;
+ }
+
+ .container{
+    text-align: center;
+    
+ }
+
+ #last-h1{
+    
+    padding-top: 30px;
+ }
+
+
+ .fname{
+    padding-top: 50px;
+    padding-bottom: 30px;
+ }
+
+ .lname{
+    
+    padding-bottom: 30px;
+ }
+
+ .phone{
+    
+    padding-bottom: 30px;
+ }
+
+ .email{
+    
+    padding-bottom: 10px;
+ }
+
+ input{
+    color: black;
+ }
+
+ .btn{
+    font-size: 30px;
+    text-decoration: none;
+    border: 2px solid darkcyan;
+    border-radius: 30px;
+    padding: 5px 30px;
+    color:black;
+    background-color: darkcyan;
 }
 
+.btn:hover{
+    background-color: grey;
+    color: black;
+    border: 1px solid grey;
+    transition: 0.1s;
+}
+ 
 
