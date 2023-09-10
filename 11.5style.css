@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 1em sans-serif;
+}
+
+.navbar{
+    background-color: antiquewhite;
+    display: flex;
+    gap: 20px;
+    padding: 20px 50px;;
+    height: 100vh;
+    
+
+}
+
+
+#logo{
+    margin-right: auto;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+   
+    
+}
+
+#logo , #home , #about , #portfolio , #contact{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        
+
+
+    }
+
+    #logo , #home , #about , #portfolio , #contact{
+        font-size: 3rem;
+        
+    }
+
+    #logo{
+        margin-right: 10px;
+    }
+}
+
+
+
