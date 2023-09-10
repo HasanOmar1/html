@@ -19,10 +19,11 @@ body{
     
     display: flex;
     z-index: 999;
-    padding: 35px 70px;
+    padding: 20px 70px;
     background-color: darkgrey;
     position: fixed;
     width: 100%;
+
     
     
     
