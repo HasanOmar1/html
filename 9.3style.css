@@ -55,7 +55,7 @@ footer{
     
 }
 
-@media (max-width:1500px) and (min-width: 901px) {
+@media (max-width:768px)  {
 
     .container{
         border: none;
