@@ -219,7 +219,7 @@ img{
 }
 
 .services-container-1 a:hover{
-    background-color: darkgoldenrod;
+    background-color: brown;
     transition: 0.2s;
 }
 
@@ -285,7 +285,8 @@ img{
 }
 
 .services-container-2 a:hover{
-    background-color: darkgoldenrod;
+    background-color: silver;
+    color: black;
     transition: 0.2s;
 }
 
@@ -350,7 +351,8 @@ img{
 }
 
 .services-container-3 a:hover{
-    background-color: darkgoldenrod;
+    background-color: gold;
+    color: black;
     transition: 0.2s;
 }
 
