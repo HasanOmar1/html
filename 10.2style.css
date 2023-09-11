@@ -429,6 +429,7 @@ img{
     color: black;
     border: 1px solid grey;
     transition: 0.1s;
+    cursor: pointer;
 }
  
 
