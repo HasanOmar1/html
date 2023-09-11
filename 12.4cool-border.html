@@ -5,112 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      div {
-        height: 200px;
-        width: 300px;
+      .border {
+        position: relative;
+        width: 250px;
+        height: 100px;
+        padding: 7px;
+        margin: 25px;
+        background: black;
+        border: none;
+        text-align: center;
+      }
+
+      .border::after,
+      .border::before {
+        content: "";
+        position: absolute;
+        width: 33px;
+        height: 20px;
+      }
+
+      .border::before {
+        left: 0;
+        top: 0;
+
+        border-left: 3px solid red;
+        border-top: 3px solid red;
+      }
+
+      .border::after {
+        right: 0;
+        top: 0;
+        border-right: 3px solid red;
+        border-top: 3px solid red;
+      }
+
+      /* ssssss */
+
+      .border-2 {
         background-color: black;
-        color: white;
-        font-size: 25px;
-      }
-
-      h3 {
         display: flex;
-        height: 120%;
         justify-content: center;
+        height: 100%;
         align-items: center;
-        font-family: sans-serif;
+        color: white;
       }
 
-      .top-left::after {
+      .border-2::after,
+      .border-2::before {
         content: "";
         position: absolute;
-        background-color: red;
-        width: 3px;
-        height: 3%;
-        top: 100px;
-        left: 40px;
+        width: 33px;
+        height: 20px;
       }
 
-      .top-left::before {
-        content: "";
-        position: absolute;
-        background-color: red;
-        width: 2%;
-        height: 3px;
-        top: 100px;
-        left: 40px;
+      .border-2::before {
+        left: 0;
+        bottom: 0;
+        border-left: 3px solid red;
+        border-bottom: 3px solid red;
       }
 
-      .top-right::after {
-        content: "";
-        position: absolute;
-        background-color: red;
-        width: 3px;
-        height: 3%;
-        top: 100px;
-        left: 270px;
-      }
-
-      .top-right::before {
-        content: "";
-        position: absolute;
-        background-color: red;
-        width: 2%;
-        height: 3px;
-        top: 100px;
-        left: 233px;
-      }
-
-      .bottom-left::after {
-        content: "";
-        position: absolute;
-        background-color: red;
-        width: 3px;
-        height: 3%;
-        top: 180px;
-        left: 40px;
-      }
-
-      .bottom-left::before {
-        content: "";
-        position: absolute;
-        background-color: red;
-        width: 2%;
-        height: 3px;
-        top: 207px;
-        left: 40px;
-      }
-
-      .bottom-right::after {
-        content: "";
-        position: absolute;
-        background-color: red;
-        width: 3px;
-        height: 3%;
-        top: 180px;
-        left: 270px;
-      }
-
-      .bottom-right::before {
-        content: "";
-        position: absolute;
-        background-color: red;
-        width: 2%;
-        height: 3px;
-        top: 207px;
-        left: 235px;
+      .border-2::after {
+        right: 0;
+        bottom: 0;
+        border-right: 3px solid red;
+        border-bottom: 3px solid red;
       }
     </style>
   </head>
   <body>
-    <div class="top-left">
-      <div class="top-right">
-        <div class="bottom-left">
-          <div class="bottom-right">
-            <h3>Cool Border</h3>
-          </div>
-        </div>
-      </div>
+    <div class="border">
+      <div class="border-2">Cool Border</div>
     </div>
   </body>
 </html>
