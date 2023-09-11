@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 200px;
+        width: 300px;
+        background-color: black;
+        color: white;
+        font-size: 25px;
+      }
+
+      h3 {
+        display: flex;
+        height: 120%;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        position: relative;
+      }
+
+      .top-left::after {
+        content: "";
+        position: absolute;
+        background-color: red;
+        width: 3px;
+        height: 3%;
+        top: 100px;
+        left: 40px;
+      }
+
+      .top-left::before {
+        content: "";
+        position: absolute;
+        background-color: red;
+        width: 2%;
+        height: 3px;
+        top: 100px;
+        left: 40px;
+      }
+
+      .top-right::after {
+        content: "";
+        position: absolute;
+        background-color: red;
+        width: 3px;
+        height: 3%;
+        top: 100px;
+        left: 270px;
+      }
+
+      .top-right::before {
+        content: "";
+        position: absolute;
+        background-color: red;
+        width: 2%;
+        height: 3px;
+        top: 100px;
+        left: 233px;
+      }
+
+      .bottom-left::after {
+        content: "";
+        position: absolute;
+        background-color: red;
+        width: 3px;
+        height: 3%;
+        top: 180px;
+        left: 40px;
+      }
+
+      .bottom-left::before {
+        content: "";
+        position: absolute;
+        background-color: red;
+        width: 2%;
+        height: 3px;
+        top: 207px;
+        left: 40px;
+      }
+
+      .bottom-right::after {
+        content: "";
+        position: absolute;
+        background-color: red;
+        width: 3px;
+        height: 3%;
+        top: 180px;
+        left: 270px;
+      }
+
+      .bottom-right::before {
+        content: "";
+        position: absolute;
+        background-color: red;
+        width: 2%;
+        height: 3px;
+        top: 207px;
+        left: 233px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-left">
+      <div class="top-right">
+        <div class="bottom-left">
+          <div class="bottom-right">
+            <h3>Cool Border</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
