@@ -7,46 +7,46 @@
     <style>
       body {
         text-align: center;
+        background-color: bisque;
+      }
+
+      div {
+        margin-top: 40vh;
         font-size: 30px;
-        background-color: darkcyan;
       }
 
-      .tooltip {
+      span[simple-tooltip] {
+        color: blue;
         position: relative;
-        display: inline-block;
+        cursor: pointer;
       }
 
-      .tooltip-text {
-        visibility: hidden;
-        width: 120px;
-        background-color: orange;
-        color: white;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
+      span[simple-tooltip]::after {
+        content: attr(simple-tooltip);
         position: absolute;
-        z-index: 1;
-        bottom: 30px;
-        right: 10px;
-        font-size: 20px;
+        background-color: #777;
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+        white-space: nowrap;
+        border-radius: 10px;
+        bottom: 100%;
+        left: 0;
+        display: none;
       }
 
-      .tooltip:hover .tooltip-text {
-        visibility: visible;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-        border-bottom: 2px dotted red;
+      span[simple-tooltip]:hover::after {
+        display: block;
+        z-index: 99;
       }
     </style>
   </head>
   <body>
-    <h1>WELCOME</h1>
-    <p>Check this out</p>
-    <div class="tooltip">
-      <a href="#">Hover over me</a>
-      <span class="tooltip-text">What's up?</span>
+    <div>
+      <h2>
+        The <span simple-tooltip="Central Processing Unit">CPU</span> is the
+        brain of the <span simple-tooltip="Personal Computer">PC</span>
+      </h2>
     </div>
   </body>
 </html>
