@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #333;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .box::after {
+        content: "";
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        transform: translateX(200px);
+        background-color: darkcyan;
+        transition: all 1s linear;
+      }
+
+      .box:hover::after {
+        transform: translateX(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
