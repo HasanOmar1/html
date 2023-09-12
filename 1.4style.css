@@ -204,20 +204,34 @@ a{
     
     
 }
-#div , #div2 , #div3 , #div4{
+ .cards div {
     background-color: blanchedalmond;
+    
     width: 200px;
     height: 300px;
     box-shadow: 3px 5px 50px 6px grey;
-    margin: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 20px;
+    margin: 40px 0;
+    font-size: 16px;
     font-family: sans-serif , Arial, Helvetica, sans-serif;
+
 }
-#card , #card2 , #card3 , #card4{
+#img1 , #img2 , #img3{
     width: 200px;
+    padding-bottom: 15px;
     
+    
+}
+.cards h3{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.cards p{
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+.cards a{
+    font-size: 17px;
     
 }
 
