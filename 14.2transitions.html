@@ -113,28 +113,25 @@
       }
 
       .scale::after {
-        content: "";
-
+        content: "Scale";
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
         height: 80px;
         width: 150px;
         top: 0;
-        right: 100%;
-        transition: all 0.2s;
-        transform: translateX(150px);
+        left: 0;
+        background-color: black;
+        color: white;
+        transition: all 0.4s;
+        transform: scale(5);
+        opacity: 0;
       }
 
       .scale:hover::after {
-        content: "Scale";
-        transform: translateX(150px) scale(2);
-        background-color: black;
-        color: white;
-
-        z-index: 1;
+        opacity: 1;
+        transform: scale(1);
       }
 
       /* skew */
