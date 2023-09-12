@@ -5,158 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
-        background-color: grey;
-        margin: 0;
+      * {
         padding: 0;
+        margin: 0;
       }
-
+      body {
+        background-color: lightgrey;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
       .container {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
       }
-
-      button {
-        padding: 30px 50px;
-        margin: 300px auto;
-        margin-left: 150px;
-        border: 3px solid black;
-        background-color: silver;
-      }
-
-      /* translate Y */
-
-      .translate-y {
-        width: 150px;
-        height: 80px;
+      .btn {
+        display: inline-block;
+        margin: 2rem;
+        color: #272727;
+        font-size: 45px;
+        border: 5px solid #272727;
+        padding: 40px 80px;
         position: relative;
         overflow: hidden;
+        transition: all 0.4s;
       }
-
-      .translate-y::after {
-        content: "Cool";
-        font-size: 20px;
+      .translate-y::before {
         display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
         justify-content: center;
         align-items: center;
-        position: absolute;
+        content: "Cool!";
         height: 100%;
         width: 100%;
-        bottom: 100%;
-        left: 0;
-        background-color: red;
-        transition: all 0.3s;
+        background: red;
+        transform: translateY(-150px);
+        transition: all 0.4s;
+      }
+      .translate-y:hover::before {
+        transform: translateY(0);
       }
 
-      .translate-y:hover::after {
-        transform: translateY(100%);
-        z-index: 1;
-      }
-
-      /* translate X */
-
-      .translate-x {
-        width: 150px;
-        height: 80px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .translate-x::after {
-        content: "";
-        position: absolute;
-        height: 80px;
-        width: 150px;
-        top: 0;
-        right: 100%;
-        background-color: blue;
-        transition: all 0.3s;
-      }
-
-      .translate-x:hover::after {
-        transform: TranslateX(100%);
-      }
-
-      /* Rotate */
-
-      .rotate {
-        width: 150px;
-        height: 80px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .rotate::after {
-        content: "";
-        position: absolute;
-        height: 80px;
-        width: 150px;
-        top: 0;
-        right: 100%;
-        background-color: yellow;
-        transition: all 0.3s;
-      }
-
-      .rotate:hover::after {
-        transform: translateX(100%) rotate(-180deg);
-      }
-
-      /* scale */
-
-      .scale {
-        width: 150px;
-        height: 80px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .scale::after {
-        content: "Scale";
-        position: absolute;
+      .translate-x::before {
         display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
         justify-content: center;
         align-items: center;
-        height: 80px;
-        width: 150px;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: blue;
+        transform: translateX(-400px);
+        transition: all 0.4s;
+        z-index: -1;
+      }
+      .translate-x:hover::before {
+        transform: translateY(0);
+      }
+
+      .rotate::before {
+        position: absolute;
         top: 0;
         left: 0;
-        background-color: black;
-        color: white;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: yellow;
+        transform: rotate(90deg);
+        transform-origin: top left;
         transition: all 0.4s;
+        z-index: -1;
+      }
+      .rotate:hover::before {
+        transform: rotate(0);
+      }
+      .scale::before {
+        position: absolute;
+        content: "Scale";
+        color: white;
+        display: flex;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
         transform: scale(5);
+        background: black;
         opacity: 0;
+        transition: all 0.4s;
+        z-index: 2;
       }
-
-      .scale:hover::after {
-        opacity: 1;
+      .scale:hover::before {
         transform: scale(1);
+        opacity: 1;
       }
-
-      /* skew */
-
       .skew {
-        width: 150px;
-        height: 80px;
-
-        transition: 0.3s;
+        color: white;
+      }
+      .skew:hover {
+        padding: 40px 80px;
+        display: inline-block;
+        transform: skewY(-5deg);
       }
 
-      .skew:hover {
-        transform: skew(-20deg);
-
-        background-color: brown;
+      .skew::after {
+        content: "";
+        position: absolute;
+        background-color: deeppink;
+        transform: skew(0deg, 0deg) scale(0.002);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transition: all 0.5s;
+        z-index: 1;
+      }
+      .skew:hover::after {
+        transform: skew(180deg, 180deg);
+      }
+      .skew::before {
+        position: absolute;
+        content: "Skew";
+        color: black;
+        display: flex;
+        transform: skew(0deg, 0deg);
+        transition: all 0.4s;
+        z-index: 2;
+      }
+      .skew:hover::before {
+        transform: skew(15deg, 10deg);
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <button class="translate-y">TranslateY</button>
-      <button class="translate-x">TranslateX</button>
-      <button class="rotate">Rotate</button>
-      <button class="scale">Scale</button>
-      <button class="skew">Skew</button>
+      <div class="btn translate-y">TranslateY</div>
+      <div class="btn translate-x">TranslateX</div>
+      <div class="btn rotate">Rotate</div>
+      <div class="btn scale">Scale</div>
+      <div class="btn skew">Skew</div>
     </div>
   </body>
 </html>
