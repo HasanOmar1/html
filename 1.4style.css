@@ -1,5 +1,16 @@
+:root{
+    --primary-color: darkcyan;
+    --secondary-color: #333;
+    --light-color: silver;
+    --links-color: violet;
+
+}
+
+
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
  
 }
 html {
@@ -9,16 +20,62 @@ html {
 
 
 body{
-    background-color: cadetblue;
     font-family: 'Abril Fatface';
     font-size: 25px;
     
     
 }
 
-.container{
+header{
+    background-color: olivedrab;
+    display: flex;
+    align-items: left ;
+    position: sticky;
+    top: 0;
+    
+}
 
-  
+
+.navbar{
+    
+    
+    display: flex;
+    align-items: left ;
+    position: sticky;
+    
+
+    
+
+}
+
+.navbar a {
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    float:left;
+    padding: 10px ;
+    overflow: auto;
+    font-size: 20px;
+    
+
+}
+
+.navbar a:hover{
+   color: white;
+   background-color: var(--secondary-color);
+   transition: 0.3s;
+   
+}
+
+
+/* First Section */
+
+.first-section{
+    background-color: var(--primary-color);
+}
+
+.container{
     text-align: center;
     
 }
@@ -46,36 +103,74 @@ img{
     
 }
 .about{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 #name{
-    color: black;
+    color: var(--secondary-color);
+    padding-bottom: 40px;
 
 }
 #profession{
     color: blue;
+    padding-bottom:50px ;
+
 }
 
-#p1{
+.about p{
     
     color: white;
     margin-left: 80px;
    
     
 }
-#p2{
-    
-    margin-left: 30px
+
+
+/*  Second Section */
+
+.second-section{
+    background-color: var(--secondary-color);
 }
 
-.links{
-    
-    margin-right: 20px;
+.second-section-container{
+    text-align: center;
 }
 
-#clickme{
+.social{
+    padding-top: 50px;
+}
+
+.social h2{
+    padding-bottom: 35px;
+    color: yellow;
+    font-weight: 500;
     
+    
+}
+
+.links ul li{
+    padding: 10px 0;
+}
+
+.links a{
+    color: var(--links-color);
+    
+
+}
+
+.links a:hover{
+    
+    color: var(--primary-color);
+}
+
+
+.btn-container{
+    padding: 100px 0;
+
+}
+
+.clickme{
+    font-size: 20px;
     margin-left: 80px;
     background-color: darkgreen;
     border-radius: 15px;
@@ -85,14 +180,15 @@ img{
     cursor: pointer;
     margin-top:10px;
 }
-#clickme:hover{
+.clickme:hover{
 
-    background-color: darkcyan;
+    background-color: var(--primary-color);
 }
 
-.a2{
-    
-    margin-left: 10px;
+/* Section Three */
+
+.section-three{
+    background-color: var(--light-color);
 }
 
 a{
@@ -100,12 +196,11 @@ a{
     margin-left: 10px;
     font-size: 20px;
 }
+
 .cards{
     
     display:flex;
-    justify-content: center;
-   
-
+    justify-content: space-around;
     
     
 }
@@ -126,9 +221,7 @@ a{
     
 }
 
-#p3{
-    
-}
+
 
 p{
     margin-left: 10px;
@@ -138,51 +231,8 @@ li{
     list-style: none;
 }
 
-.navbar{
-    
-    
-    display: flex;
-    align-items: left ;
-    position: sticky;
-    
 
-    
-
-}
-
-.navbar a {
-    margin-right: 50px;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
-    float:left;
-    padding: 10px ;
-    overflow: auto;
-    font-size: 20px;
-    
-
-    
-
-
-}
-
-.navbar a:hover{
-   color: white;
-   
-}
-
-header{
-    
-    display: flex;
-    align-items: left ;
-    position: sticky;
-    top: 0;
-   
-    
-    
-}
-
-@media (max-width:500px){
+/* @media (max-width:500px){
 
    .about{
     padding-right: 50px;
@@ -197,7 +247,7 @@ header{
         justify-content: flex-start;
         flex-wrap: wrap;
     }
-}
+} */
 
 @media (max-width:768px){
 
@@ -213,5 +263,10 @@ header{
          align-items: flex-start;
          justify-content: flex-start;
          flex-wrap: wrap;
+     }
+
+     .clickme{
+        font-size: 1.3rem;
+        margin-right: 80px;
      }
  }
