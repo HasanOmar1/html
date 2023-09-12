@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animated-navbar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: wheat;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 50px;
+        font-size: 30px;
+      }
+
+      a {
+        position: relative;
+        text-decoration: none;
+        color: black;
+        transition: 0.1s;
+        font-family: sans-serif;
+        padding: 0 10px;
+      }
+
+      a::after {
+        content: "";
+        position: absolute;
+        background-color: darkcyan;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+      }
+
+      a:hover::after {
+        width: 100%;
+      }
+
+      a::before {
+        content: "";
+        position: absolute;
+        background-color: darkcyan;
+        height: 3px;
+        width: 0;
+        right: 0;
+        top: -6px;
+        transition: 0.3s;
+      }
+
+      a:hover::before {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </div>
+  </body>
+</html>
