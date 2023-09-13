@@ -15,8 +15,9 @@
         display: grid;
         grid-template-areas:
           "header header   header  header"
-          "sidebar sidebar content content"
-          "sidebar sidebar sidebar-2 footer";
+          "sidebar content content sidebar-2"
+          "footer footer footer footer";
+
         grid-template-columns: repeat(4, 1fr);
         height: 500px;
         gap: 0.5rem;
@@ -52,12 +53,26 @@
         grid-area: footer;
       }
 
-      @media (max-width: 768px) {
+      /* Smart phone */
+
+      @media (max-width: 500px) {
         .container {
           grid-template-areas:
             "header header   header  header"
             "sidebar sidebar sidebar sidebar"
             "content content content content"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+            "footer footer footer footer";
+        }
+      }
+
+      /* Tablet */
+
+      @media (min-width: 501px) and (max-width: 768px) {
+        .container {
+          grid-template-areas:
+            "header header   header  header"
+            "sidebar content content content"
             "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
             "footer footer footer footer";
         }
