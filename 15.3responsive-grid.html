@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Grid</title>
+    <style>
+      * {
+        border-radius: 20px;
+        font-size: 20px;
+        color: white;
+        box-sizing: border-box;
+      }
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header   header  header"
+          "sidebar sidebar content content"
+          "sidebar sidebar sidebar-2 footer";
+        grid-template-columns: repeat(4, 1fr);
+        height: 500px;
+        gap: 0.5rem;
+      }
+
+      .grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .header {
+        background-color: firebrick;
+        grid-area: header;
+      }
+
+      .sidebar {
+        background-color: darkcyan;
+        grid-area: sidebar;
+      }
+
+      .content {
+        background-color: green;
+        grid-area: content;
+      }
+
+      .sidebar-2 {
+        background-color: purple;
+        grid-area: sidebar-2;
+      }
+      .footer {
+        background-color: darkorange;
+        grid-area: footer;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-areas:
+            "header header   header  header"
+            "sidebar sidebar sidebar sidebar"
+            "content content content content"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+            "footer footer footer footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid header">Header</div>
+      <div class="grid sidebar">Sidebar</div>
+      <div class="grid content">
+        Content and more content than we had before so this column is now quite
+        tall ok? ok
+      </div>
+      <div class="grid sidebar-2">Sidebar 2</div>
+      <div class="grid footer">Footer</div>
+    </div>
+  </body>
+</html>
