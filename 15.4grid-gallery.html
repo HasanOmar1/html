@@ -15,42 +15,73 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      grid-auto-rows: 250px;
-      gap: 3rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-auto-rows: 240px;
+      grid-auto-flow: dense;
+      gap: 1rem;
+      padding: 10px;
+      margin: 0 auto;
+      max-width: 1100px;
+      background-color: #f2f2f2;
     }
 
-    .img-1,
-    .img-12 {
-      height: 200px;
-      width: 300px;
+    img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
     }
 
-    .tall {
-      grid-column: span 3 / auto;
+    .item-1 {
+      grid-column: 1 / span 2;
     }
 
-    .wide {
-      grid-column: 1 / 5;
+    .item-2 {
     }
   </style>
   <body>
     <div class="grid">
-      <div><img class="img-1 tall" src="./grid-gallery-img/1.jpeg" /></div>
-      <div><img class="img-2 wide" src="./grid-gallery-img/2.jpeg" /></div>
-      <div><img class="img-3 tall" src="./grid-gallery-img/3.jpeg" /></div>
-      <div><img class="img-4" src="./grid-gallery-img/4.jpeg" /></div>
-      <div><img class="img-5" src="./grid-gallery-img/5.jpeg" /></div>
-      <div><img class="img-6" src="./grid-gallery-img/6.jpeg" /></div>
-      <div><img class="img-7" src="./grid-gallery-img/7.jpeg" /></div>
-      <div><img class="img-8" src="./grid-gallery-img/8.jpeg" /></div>
-      <div><img class="img-9" src="./grid-gallery-img/9.jpeg" /></div>
-      <div><img class="img-10" src="./grid-gallery-img/10.jpeg" /></div>
-      <div><img class="img-11" src="./grid-gallery-img/11.jpeg" /></div>
-      <div><img class="img-12" src="./grid-gallery-img/12.jpeg" /></div>
-      <div><img class="img-13" src="./grid-gallery-img/13.jpeg" /></div>
-      <div><img class="img-14" src="./grid-gallery-img/14.jpeg" /></div>
+      <div class="item-1">
+        <img class="img-1" src="./grid-gallery-img/1.jpeg" />
+      </div>
+      <div class="item-2">
+        <img class="img-2 wide" src="./grid-gallery-img/2.jpeg" />
+      </div>
+      <div class="item-3">
+        <img class="img-3 tall" src="./grid-gallery-img/3.jpeg" />
+      </div>
+      <div class="item-4">
+        <img class="img-4" src="./grid-gallery-img/4.jpeg" />
+      </div>
+      <div class="item-5">
+        <img class="img-5" src="./grid-gallery-img/5.jpeg" />
+      </div>
+      <div class="item-6">
+        <img class="img-6" src="./grid-gallery-img/6.jpeg" />
+      </div>
+      <div class="item-7">
+        <img class="img-7" src="./grid-gallery-img/7.jpeg" />
+      </div>
+      <div class="item-8">
+        <img class="img-8" src="./grid-gallery-img/8.jpeg" />
+      </div>
+      <div class="item-9">
+        <img class="img-9" src="./grid-gallery-img/9.jpeg" />
+      </div>
+      <div class="item-10">
+        <img class="img-10" src="./grid-gallery-img/10.jpeg" />
+      </div>
+      <div class="item-11">
+        <img class="img-11" src="./grid-gallery-img/11.jpeg" />
+      </div>
+      <div class="item-12">
+        <img class="img-12" src="./grid-gallery-img/12.jpeg" />
+      </div>
+      <div class="item-13">
+        <img class="img-13" src="./grid-gallery-img/13.jpeg" />
+      </div>
+      <div class="item-14">
+        <img class="img-14" src="./grid-gallery-img/14.jpeg" />
+      </div>
     </div>
   </body>
 </html>
