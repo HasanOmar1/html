@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      /* grid-template-rows: repeat(auto-fill , minmax(200px , 1fr)); */
+      gap: 1rem;
+      margin: 90px;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <div class="grid">
+      <div><img class="img img-1" src="./grid-gallery-img/1.jpeg" /></div>
+      <div><img class="img img-2" src="./grid-gallery-img/2.jpeg" /></div>
+      <div><img class="img img-3" src="./grid-gallery-img/3.jpeg" /></div>
+      <div><img class="img img-4" src="./grid-gallery-img/4.jpeg" /></div>
+      <div><img class="img img-5" src="./grid-gallery-img/5.jpeg" /></div>
+      <div><img class="img img-6" src="./grid-gallery-img/6.jpeg" /></div>
+      <div><img class="img img-7" src="./grid-gallery-img/7.jpeg" /></div>
+      <div><img class="img img-8" src="./grid-gallery-img/8.jpeg" /></div>
+      <div><img class="img img-9" src="./grid-gallery-img/9.jpeg" /></div>
+      <div><img class="img img-10" src="./grid-gallery-img/10.jpeg" /></div>
+      <div><img class="img img-11" src="./grid-gallery-img/11.jpeg" /></div>
+      <div><img class="img img-12" src="./grid-gallery-img/12.jpeg" /></div>
+      <div><img class="img img-13" src="./grid-gallery-img/13.jpeg" /></div>
+      <div><img class="img img-14" src="./grid-gallery-img/14.jpeg" /></div>
+    </div>
+  </body>
+</html>
